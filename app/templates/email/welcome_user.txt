@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Welcome to ProjectPitch
+We have just seen you have signed up for our application and want to welcome you to the family. Please enjoy the pitches of vatious categories and you can also add a pitch of your choice.
