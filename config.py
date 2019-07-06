@@ -5,6 +5,7 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://blaise:kirokiro@localhost/projectpitch'
     SECRET_KEY = os.environ.get('SECRET_KEY')
     UPLOADED_PHOTOS_DEST ='app/static/photos'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
@@ -13,17 +14,21 @@ class Config:
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
     
+   
     
 class ProdConfig(Config):
-    
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
     pass
 
+class TestConfig(Config):
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://blaise:kirokiro@localhost/projectpitch'
 
 class DevConfig(Config):
-
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://blaise:kirokiro@localhost/projectpitch'
     DEBUG = True
 
 config_options = {
 'development':DevConfig,
-'production':ProdConfig
+'production':ProdConfig,
+'test':TestConfig
 }

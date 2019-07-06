@@ -29,7 +29,7 @@ def register():
         db.session.add(user)
         db.session.commit()
 
-        mail_message("Welcome to watchlist","email/welcome_user",user.email,user=user)
+        mail_message("Welcome to projectpitch","email/welcome_user",user.email,user=user)
 
         return redirect(url_for('auth.login'))
         title = "New Account"
@@ -39,4 +39,5 @@ def register():
 @login_required
 def logout():
     logout_user()
+    flash('You have been successfully logged out')
     return redirect(url_for("main.index"))

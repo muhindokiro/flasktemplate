@@ -1,6 +1,6 @@
 from flask import render_template,request,redirect,url_for,abort
 from . import main
-from ..models import Comment,User
+from ..models import Pitch,Comment,User
 from .forms import PitchForm,CommentForm,UpdateProfile
 from flask_login import login_required
 from .. import db,photos
@@ -14,16 +14,9 @@ def index():
     View root page function that returns the index page and its data
     '''
     title = 'Home - ProjectPitch'
+
+    # pitches = Pitch.query.all()
     return render_template('index.html',title = title)
-
-
-# @main.route('/pitch/<int:id>')
-# def pitch(id):
-#     '''
-#     View pitch page function that returns the pitch details page and its data
-#     '''
-#     return render_template('pitch.html',title = title,pitch = pitch)
-
 
 @main.route('/new_comment/new/<int:id>', methods = ['GET','POST'])
 @login_required
@@ -52,6 +45,7 @@ def new_pitch():
         new = Pitch(title=title, description=description)
         new.save_pitch()
         all_pitches.append(new)
+
         return redirect('/')
 
     return render_template('pitch.html',pitch_form=pitch_form)
