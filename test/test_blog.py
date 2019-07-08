@@ -1,5 +1,5 @@
 import unittest
-from app.models import Pitch
+from app.models import Blog
 
 class BlogTest(unittest.TestCase):
     '''
@@ -9,10 +9,10 @@ class BlogTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_blog = Pitch('blog category','my blog')
+        self.new_blog = Blog('blog category','my blog')
 
     def test_instance(self):
-        self.assertTrue(isinstance(self.new_pitch,Pitch))
+        self.assertTrue(isinstance(self.new_blog,Blog))
 
 
 if __name__ == '__main__':
