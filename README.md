@@ -1,14 +1,16 @@
-Pitch Application
+Sports Blog
 ------------------------
 
-3/7/2019
+8/7/2019
 
 By Muhindo Kiro
+----------------
 
 
 Description
 -----------
-This is a pitch application where a user can pitch anything. The user is also able to have an account where he/she can have their own pitches. A user will have to create an account in order for them to have a profile page where they can check for their pitches. The user credentials are saved in the database. 
+This is a blog about sports. The sports featured are mainly football,basketball,cycling and rugby. A user is able view blogs frpm the categories given as for now. A user will also be able to sign up  have an account for his/her profile page where he/she can add their profile picture,bio and prefered blogs.
+A user will also be able to comment on other blogs and also view other comments also made.  
 
 
 Requirements
@@ -35,13 +37,13 @@ Behaviour Driven Development
 | ------------- |:-----------:| -----------:|
 | user opens application in terminal by running command ./start.sh | application provides a portal for user | user can view the web application |
 | to create an account user clicks sign up | application opens the sign up page | user fills in their details in forms provided |
-| when user wants to create a pitch clicks add pitch button | application opens the add pitch page | user creates pitch |
-| when user wants to add a comment on a pitch clicks comment button | application provides a form to comment | user writes a comment and posts | 
+| when user wants to view blogs | ---- | blogs are displayed on web page |
+| when user wants to add a comment on a comment clicks comment button | application provides a form to comment | user writes a comment and posts | 
 
 
 Project Livesite
 -----------------
-https://github.com/muhindokiro/projectpitch.git
+https://github.com/muhindokiro/blog.git
 
 
 Known Bugs
@@ -61,7 +63,7 @@ Technologies Used
 Contact details
 ----------------
 
-E-mail: pitch@gmail.com
+E-mail: blogsports@gmail.com
 
 Phone: 0712345678
 

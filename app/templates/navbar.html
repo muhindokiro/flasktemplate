@@ -1,50 +1,54 @@
 <!--Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+<nav class="mb-1 navbar navbar-expand-lg navbar-dark success-color">
         <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="/">Home
+              <a style="font-size: 24px" class="nav-link" href="/">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">Categories</a>
+                    <a style="font-size: 24px" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false">Top Stories</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="/pitch">Riddle pitch</a>
-                      <a class="dropdown-item" href="/pitch">Idea pitch</a>
-                      <a class="dropdown-item" href="/pitch">Motivational pitch</a>
-                      <a class="dropdown-item" href="/pitch">Funny pitch</a>
-                      <a class="dropdown-item" href="/pitch">Prayer pitch</a>
-                      <a class="dropdown-item" href="/pitch">Love pitch</a>
+                      <a style="font-size: 15px" class="dropdown-item" href="/football">Football</a>
+                      <a style="font-size: 15px" class="dropdown-item" href="/cycling">Cycling</a>
+                      <a style="font-size: 15px" class="dropdown-item" href="/rugby">Rugby</a>
+                      <a style="font-size: 15px" class="dropdown-item" href="/basketball">Basket ball</a>
                     </div>
             </li>
           </ul>
+          <p style="text-align: center; font-size:28px; color: white;">Sports Blog</p>
           <ul class="navbar-nav ml-auto nav-flex-icons">
             <li class="nav-item">
               <a class="nav-link waves-effect waves-light">
-                <i class="fab fa-twitter"></i>
+                <i class="fas fa-bicycle fa-3x"></i>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link waves-effect waves-light">
-                <i class="fab fa-google-plus-g"></i>
+                <i class="fas fa-basketball-ball fa-3x"></i>
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-user"></i>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <i class="fas fa-football-ball fa-3x"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect waves-light">
+                <i class="fas fa-futbol fa-3x"></i>
               </a>
             </li>
           </ul>
+          <a style="font-size: 20px; color: white;" href="/blog">Create Blog</a>
           <ul class="nav navbar-nav navbar-right">
             {% if current_user.is_authenticated %}
-            <li><a href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
-            <li style="color:white;padding:15px;">{{current_user.username}}</li>
-            <li><a href="{{url_for('auth.logout')}}">Sign out</a></li>
+            <li><a style="font-size: 17px" href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
+            <li style="color:white;padding:15px; font-size: 17px;">{{current_user.username}}</li>
+            <li><a style="font-size: 24px; color: white;" href="{{url_for('auth.logout')}}">Sign out</a></li>
             {% else %}
-            <li><a href="{{url_for('auth.login')}}">Sign in</a></li>
+            <li><a style="font-size: 24px; color: white;" href="{{url_for('auth.login')}}">Sign in</a></li>
             {%endif%}
           </ul>
         </div>

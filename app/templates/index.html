@@ -6,122 +6,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>ProjectPitch</title>
+    <title>My Blog</title>
 </head>
 <body>
-  
-<h1 style="text-align: center"> Pitch Application </h1>
+    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+        <!--Indicators-->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-2" data-slide-to="1"></li>
+          <li data-target="#carousel-example-2" data-slide-to="2"></li>
+        </ol>
+        <!--/.Indicators-->
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="view">
+              <img class="d-block w-100" src="/static/photos/slideshow/pogboom.jpg" height="500px">
+              <div class="mask rgba-black-light"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive"><b>Paul Pogba is in Manchester United's travelling squad for the club's four-match 18-day pre-season tour of Australia, Singapore and China.</b></h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="/static/photos/slideshow/messi.jpg" height="500px">
+              <div class="mask rgba-black-strong"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive"><b>Barcelona star Lionel Messi's Copa America criticism 'unfounded' say South American football bosses.</b></h3>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+              <img class="d-block w-100" src="/static/photos/slideshow/cr7.jpg" height="500px">
+              <div class="mask rgba-black-slight"></div>
+            </div>
+            <div class="carousel-caption">
+              <h3 class="h3-responsive"><b>The Portugal front man is targeting a bigger trophy haul next season after missing out on the Champions League and Coppa Italia last time out.</b></h3>
+            </div>
+          </div>
+        </div>
+        <!--/.Slides-->
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+      </div>
 
-<div class="container-fluid"> 
-        <div class="col-md-6">
-            <!-- Card content -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title"><a>Riddle Pitch</a></h4>
-              <!-- Text -->
-              <p class="card-text">What 8 letter word can have a letter taken away and it still makes a word. Take another letter away and it still makes a word. Keep on doing that until you have one letter left. What is the word?</p>
-              <!-- Button -->
-              <a style="color: antiquewhite" (click)='quoteUp()' class="btn btn-info"><b> Upvote   {{isUp}} </b></a>
-<br>
-<a  style="color: antiquewhite" (click)='quoteDown()' class="btn btn-dark"><b> Downvote   {{isDown}} </b></a>
-<br>
-<a href="/new_comment" class="btn btn-default btn-rounded mb-4">Comment</a> 
-      
-            </div>  
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/football/Hazard.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>Spanish giants Real Madrid have now already repaid for how much they spent on Eden Hazard by their sales this summer.</b></p>
+                        <a style="font-size: 15px" href="https://www.calciomercato.com/en/news/hazard-fee-already-repaid-by-real-madrid-sales-the-figures-64080">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/rugby/rugby3.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>From the Lionesses in France to Cori Gauff at Wimbledon, there have been no shortage of success stories of late but Castleford in West Yorkshire is hardly somewhere that immediately springs to mind when thinking of women’s sport.</b></p>
+                        <a style="font-size: 15px" href="https://www.theguardian.com/sport/2019/jul/06/womens-rugby-league-castleford-georgia-roche-challenge-cup">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/cycling/cyc2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>The Tour de France 2019 kicked off on Saturday July 6, with three weeks of racing, including five mountain top finishes and a total of 3,460 kilometres.</b></p>
+                        <a style="font-size: 15px" href="https://www.cyclingweekly.com/news/racing/tour-de-france/tour-de-france-route-192041">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <br>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/rugby/rugby2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>New Zealand Rugby, the national governing body for rugby union and the organisation behind the All Blacks, has suffered a loss of NZ$1.9 million for the 2018 financial year, with future budget predictions looking bleak.</b></p>
+                        <a style="font-size: 15px" href="https://ministryofsport.com.au/new-zealand-rugby-suffer-financial-losses-in-2018-the-future-doesnt-look-much-better/">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/football/de jong.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>Barcelona new signing Frenkie de Jong says deciding to move to the Camp Nou from Ajax was a pretty easy decision.</b></p>
+                        <a style="font-size: 15px" href="https://www.barcablaugranes.com/fc-barcelona-transfer-rumors-news/2019/7/6/20683625/frenke-de-jong-says-joining-barcelona-was-an-easy-decision">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/cycling/cyc3.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>Every summer cycling enthusiasts anticipate the start of the Tour de France, and in more recent times, in the north of the UK, the Tour de Yorkshire.</b></p>
+                        <a style="font-size: 15px" href="http://theconversation.com/the-unbearable-whiteness-of-cycling-76256">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/basketball/bb2.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>On paper, the new-look Clippers are arguably best team in the league. But Los Angeles still needs a few things to go its way in order to reach its mind-boggling potential with Kawhi and Paul George.</b></p>
+                        <a style="font-size: 15px" href="https://www.si.com/nba">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/cycling/cyc1.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>
+                            It is sometimes taken for granted that once a cyclist reaches a competent level, their bike-handling skills are good enough. Not true.</b></p>
+                        <a style="font-size: 15px" href="https://www.cyclingweekly.com/fitness/improve-bike-handling-303933">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/basketball/bb3.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>The Rutgers women’s basketball team earned its first trip to the NCAA Tournament in four seasons on Monday, as they were selected as the 7 seed in the Albany Region.</b></p>
+                        <a style="font-size: 15px" href="https://www.onthebanks.com/2019/3/18/18271571/rutgers-womens-basketball-earns-seed-in-2019-ncaa-tournament-big-ten-c-vivian-stringer-buffalo-uconn">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/football/bissaka.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>After weeks of back-and-forth with Crystal Palace, Manchester United finally got their man. Aaron Wan-Bissaka, one of the best young defenders in the Premier League, signed on to the Ole Gunnar Solskjaer project for an initial £45 million fee.</b></p>
+                        <a style="font-size: 15px" href="https://thebusbybabe.sbnation.com/2019/7/3/20679888/aaron-wan-bissaka-from-every-angle-manchester-united-crystal-palace">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/basketball/bb1.jpg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>Maryland basketball has escaped its toughest stretch of the season. In a five-game span that included four road contests and four meetings with ranked foes, the No. 24 Terps emerged 3-2.</b></p>
+                        <a style="font-size: 15px" href="https://www.testudotimes.com/maryland-terps-basketball/2019/2/22/18235117/ohio-state-game-stats-rematch-preview-big-ten-schedule-standings">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card ml-4 mt-4" style="width: 40rem;">
+                    <div class="view overlay">
+                        <img class="card-img-top card1" src="/static/photos/rugby/rugby1.jpeg" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 15px" class="card-name"><b>Amateur rugby clubs in France will trial law changes which include lowering the height of a tackle and banning tackles by two players next season, the French Rugby Federation’s (FFR) technical director Didier Retiere said on Tuesday.</b></p>
+                        <a style="font-size: 15px" href="https://www.foxsports.com.au/rugby/not-above-waist-no-twoman-tackles-rugbys-bizarre-rule-changes/news-story/8234dd80b739e81f716a9923c130ae89">Read more</a>
+                        <a href="/comment" class="btn btn-success btn-rounded mb-4">Comment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <div class="col-md-6">
-            <!-- Card content -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title"><a>Idea Pitch</a></h4>
-              <!-- Text -->
-              <p class="card-text">No Idea Is So Outlandish That It Should Not Be Considered With A Searching But At The Same Time A Steady Eye.</p>
-              <!-- Button -->
-              <a style="color: antiquewhite" (click)='quoteUp()' class="btn btn-info"><b> Upvote   {{isUp}} </b></a>
-<br>
-<a  style="color: antiquewhite" (click)='quoteDown()' class="btn btn-dark"><b> Downvote   {{isDown}} </b></a>
-<br>
-<a href="/new_comment" class="btn btn-default btn-rounded mb-4">Comment</a>  
-      
-            </div>  
-        </div>
-        <br>
-
-        <div class="col-md-6">
-            <!-- Card content -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title"><a>Motivational Pitch</a></h4>
-              <!-- Text -->
-              <p class="card-text">The harder you work for something, the greater you’ll feel when you achieve it.</p>
-              <!-- Button -->
-              <a style="color: antiquewhite" (click)='quoteUp()' class="btn btn-info"><b> Upvote   {{isUp}} </b></a>
-<br>
-<a  style="color: antiquewhite" (click)='quoteDown()' class="btn btn-dark"><b> Downvote   {{isDown}} </b></a>
-<br>
-<a href="/new_comment" class="btn btn-default btn-rounded mb-4">
-    Comment</a>  
-      
-            </div>  
-        </div>
-        <br>
-        <div class="col-md-6">
-            <!-- Card content -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title"><a>Funny Pitch</a></h4>
-              <!-- Text -->
-              <p class="card-text">If two wrongs don't make a right, try three.</p>
-              <!-- Button -->
-              <a style="color: antiquewhite" (click)='quoteUp()' class="btn btn-info"><b> Upvote   {{isUp}} </b></a>
-<br>
-<a  style="color: antiquewhite" (click)='quoteDown()' class="btn btn-dark"><b> Downvote   {{isDown}} </b></a>
-<br>
-<a href="/new_comment" class="btn btn-default btn-rounded mb-4">
-    Comment</a>  
-      
-            </div>  
-        </div>
-        <br>
-        <div class="col-md-6">
-            <!-- Card content -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title"><a>Prayer Pitch</a></h4>
-              <!-- Text -->
-              <p class="card-text">Our prayers are sometimes answered without us realizing.</p>
-              <!-- Button -->
-              <a style="color: antiquewhite" (click)='quoteUp()' class="btn btn-info"><b> Upvote   {{isUp}} </b></a>
-<br>
-<a  style="color: antiquewhite" (click)='quoteDown()' class="btn btn-dark"><b> Downvote   {{isDown}} </b></a>
-<br>
-<a href="/new_comment" class="btn btn-default btn-rounded mb-4">
-    Comment</a>  
-      
-            </div>  
-        </div>
-        <br>
-        <div class="col-md-6">
-            <!-- Card content -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title"><a>Love Pitch</a></h4>
-              <!-- Text -->
-              <p class="card-text">You know you're in love when you can't fall asleep because reality is finally better than your dreams.</p>
-              <!-- Button -->
-              <a style="color: antiquewhite" (click)='quoteUp()' class="btn btn-info"><b> Upvote   {{isUp}} </b></a>
-<br>
-<a  style="color: antiquewhite" (click)='quoteDown()' class="btn btn-dark"><b> Downvote   {{isDown}} </b></a>
-<br>
-<a href="/new_comment" class="btn btn-default btn-rounded mb-4">
-    Comment</a>  
-      
-            </div>  
-        </div>
-        <br>
-</div>
  
 </body>
 

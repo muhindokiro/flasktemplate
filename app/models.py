@@ -35,25 +35,28 @@ class User(UserMixin,db.Model):
     def __repr__(self):
         return f'User {self.username}'
 
-class Pitch:
+class Blog:
+    
+    all_blogs = []
     '''
-    Pitch class to define Pitch Objects
+    blog class to define blog Objects
     '''
-
-    def __init__(self,id,title,mypitch):
-        self.id =id
+    def __init__(self,title,description):
         self.title = title
-        self.mypitch = mypitch
+        self.description = description
+
+    def save_blog(self):
+        Blog.all_blogs.append(self)
 
 
 class Comment:
 
     all_comments = []
 
-    def __init__(self,pitch_id,title,mypitch,comment):
-        self.pitch_id = pitch_id
+    def __init__(self,blog_id,title,myblog,comment):
+        self.blog_id = blog_id
         self.title = title
-        self.mypitch = mypitch
+        self.myblog = myblog
         self.comment = comment
 
 
@@ -71,7 +74,7 @@ class Comment:
         response = []
 
         for comment in cls.all_comments:
-            if comment.movie_id == id:
+            if comment.blog_id == id:
                 response.append(comment)
 
         return response
