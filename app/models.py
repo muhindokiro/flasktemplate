@@ -36,7 +36,7 @@ class User(UserMixin,db.Model):
         return f'User {self.username}'
 
 class Blog:
-    
+
     all_blogs = []
     '''
     blog class to define blog Objects
@@ -47,7 +47,6 @@ class Blog:
 
     def save_blog(self):
         Blog.all_blogs.append(self)
-
 
 class Comment:
 
