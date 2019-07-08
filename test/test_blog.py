@@ -5,7 +5,6 @@ class BlogTest(unittest.TestCase):
     '''
     Test Class to test the behaviour of the Pitch class
     '''
-
     def setUp(self):
         '''
         Set up method that will run before every Test
