@@ -1,5 +1,5 @@
 Sports Blog
-------------------------
+-------------
 
 8/7/2019
 
@@ -14,13 +14,13 @@ A user will also be able to comment on other blogs and also view other comments 
 
 
 Requirements
---------------------------------
+--------------
 
 * Internet Connection
 * Computer or Mobile device
 
 Installation Requirements
---------------------------------
+---------------------------
 
 * Enter github using livesite provided
 * Git clone the news repo
