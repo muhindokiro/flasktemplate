@@ -2,7 +2,7 @@ import os
 
 class Config:
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://blaise:myblog@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2:'
     SECRET_KEY = os.environ.get('SECRET_KEY')
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
@@ -21,10 +21,10 @@ class ProdConfig(Config):
     pass
 
 class TestConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://blaise:myblog@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2:'
 
 class DevConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://blaise:myblog@localhost/blog'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2:'
     DEBUG = True
 
 config_options = {

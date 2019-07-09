@@ -8,8 +8,6 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-                    <a style="font-size: 24px" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">Top Stories</a>
                     <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
                       <a style="font-size: 15px" class="dropdown-item" href="/football">Football</a>
                       <a style="font-size: 15px" class="dropdown-item" href="/cycling">Cycling</a>
@@ -18,30 +16,6 @@
                     </div>
             </li>
           </ul>
-          <p style="text-align: center; font-size:28px; color: white;">Sports Blog</p>
-          <ul class="navbar-nav ml-auto nav-flex-icons">
-            <li class="nav-item">
-              <a class="nav-link waves-effect waves-light">
-                <i class="fas fa-bicycle fa-3x"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect waves-light">
-                <i class="fas fa-basketball-ball fa-3x"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect waves-light">
-                <i class="fas fa-football-ball fa-3x"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link waves-effect waves-light">
-                <i class="fas fa-futbol fa-3x"></i>
-              </a>
-            </li>
-          </ul>
-          <a style="font-size: 20px; color: white;" href="/blog">Create Blog</a>
           <ul class="nav navbar-nav navbar-right">
             {% if current_user.is_authenticated %}
             <li><a style="font-size: 17px" href="{{url_for('main.profile',uname=current_user.username)}}">Profile</a></li>
